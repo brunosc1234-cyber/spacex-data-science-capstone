@@ -7,8 +7,8 @@ IBM Applied Data Science Capstone — Falcon 9 first-stage landing analysis.
 - [Historical launch web scraping](jupyter-labs-webscraping.ipynb) — BeautifulSoup extraction of Falcon 9 launch-history tables.
 - [Data wrangling](labs-jupyter-spacex-Data%20wrangling-v2.ipynb) — missing-value review, site/orbit counts and landing labels.
 - [EDA with visualization](jupyter-labs-eda-dataviz-v2.ipynb) — six required charts and one-hot feature engineering.
-- [EDA with SQL](jupyter-labs-eda-sql-coursera_sqllite.ipynb) — ten SQLite query tasks.
-- [Launch-site mapping with Folium](lab-jupyter-launch-site-location-v2.ipynb) — site markers, outcome clusters, distance calculations and proximity map.
+- [EDA with SQL](jupyter-labs-eda-sql-coursera_sqllite.ipynb) — ten SQLite query tasks; Task 5 parses DD-MM-YYYY chronologically (first ground-pad landing: 22 Dec 2015).
+- [Launch-site mapping with Folium](lab-jupyter-launch-site-location-v2.ipynb) — labeled site markers, green/red landing-outcome MarkerCluster and Haversine distance to a manually selected coastal reference point (approximately 0.596 km from CCSFS SLC 40; illustrative, not a GIS nearest-feature query).
 - [Machine-learning prediction](SpaceX-Machine-Learning-Prediction-Part-5-v1.ipynb) — Logistic Regression, SVM, Decision Tree and KNN with 10-fold GridSearchCV.
 - [Dash application](spacex_dash_app.py) — site outcome pie chart and payload/flight scatter plot.
 
