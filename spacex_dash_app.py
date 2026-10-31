@@ -11,7 +11,11 @@ import plotly.express as px
 DATA_PATH = Path(os.getenv("SPACEX_DATASET", "data/dataset_part_2.csv"))
 if not DATA_PATH.exists():
     DATA_PATH = Path("dataset_part_2.csv")
-df = pd.read_csv(DATA_PATH)
+if DATA_PATH.exists():
+    df = pd.read_csv(DATA_PATH)
+else:
+    DATA_URL = "https://raw.githubusercontent.com/Abhigyan-RA/SpaceX-capstone/main/dataset_part_2.csv"
+    df = pd.read_csv(DATA_URL)
 app = Dash(__name__)
 app.layout = html.Div([
     html.H1("SpaceX Falcon 9 Launch Success Dashboard"),
